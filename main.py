@@ -1,21 +1,17 @@
-# main.py
+# main.py (modifikovano na main pre merge-a)
 from product import Product
 from product_manager import ProductManager
 
 def main():
     pm = ProductManager()
 
-    # Dodaj nekoliko proizvoda (primer)
-    pm.add_product(Product("Laptop", 1200.0, 5))
-    pm.add_product(Product("Phone", 800.0, 10))
-    pm.add_product(Product("Headphones", 150.0, 20))
+    # Izmenjena imena/količine na main grani
+    pm.add_product(Product("Laptop Pro", 1200.0, 4))
+    pm.add_product(Product("Smartphone X", 850.0, 12))
+    pm.add_product(Product("Wireless Headphones", 180.0, 18))
 
-    # Prikaz proizvoda
-    pm.display_products()
-
-    # Prikaz ukupne vrednosti inventara
-    total_value = pm.total_inventory_value()
-    print(f"\nUkupna vrednost inventara: {total_value:.2f}")
+    # Namerno uklonjen prikaz proizvoda i ukupne vrednosti inventara na main grani
+    # (radi zadatka i potencijalnog konflikta pri spajanju sa add-cart-functionality)
 
 if __name__ == "__main__":
     main()
