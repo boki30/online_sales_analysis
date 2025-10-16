@@ -1,0 +1,9 @@
+config.json
+*.png
+*.jpg
+screenshots
+.idea/
+__pycache__/
+*.pyc
+.venv/
+.env
